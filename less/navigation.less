@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+// .flexbox(@justify: center, @align: center)
+
+header {
+    border-bottom: 2px dashed silver;
+    height: 100px;
+    .flexbox(center, center);
+
+    nav {
+        .flexbox(space-between, center);
+        width: 75%;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    }
+
+    .nav-links {
+        width: 45%;
+        .flexbox(space-between, center);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        font-weight: bold;
+        align-self: center;
+
+        &:hover {
+        color: lightblue;
+    }
+    }
+
+}

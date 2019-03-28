@@ -168,6 +168,40 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: 2px dashed silver;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+header nav h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+header .nav-links {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  align-self: center;
+}
+header a:hover {
+  color: lightblue;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
