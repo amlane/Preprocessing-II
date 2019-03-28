@@ -303,8 +303,21 @@ header a:hover {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 100%;
+    height: auto;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -312,9 +325,20 @@ header a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 .home .content-pick .destination h4 {
   font-weight: bold;
@@ -331,6 +355,20 @@ header a:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    color: white;
+    background: #17A2B8;
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination .btn:hover {
   color: teal;
   background: white;
@@ -343,4 +381,19 @@ header a:hover {
   justify-content: center;
   align-items: center;
   border: 1px solid #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn:hover:hover {
+    color: #17A2B8;
+    background: white;
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C0C0C0;
+  }
 }
