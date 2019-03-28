@@ -183,15 +183,34 @@ header nav {
   width: 90%;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 header nav h1 {
   font-size: 4rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  header nav h1 {
+    font-size: 3.2rem;
+  }
 }
 header .nav-links {
   width: 38%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header .nav-links {
+    width: 90%;
+    margin-top: 10px;
+  }
 }
 header a {
   text-decoration: none;
@@ -269,6 +288,9 @@ header a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination h4 {
+  font-weight: bold;
 }
 .home .content-pick .destination .btn {
   color: white;

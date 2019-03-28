@@ -13,15 +13,29 @@ header {
         width: 90%;
         padding-right: 2%;
 
+        @media @mobile {
+            .flexbox(center, center);
+            flex-direction: column;
+        }
+
         h1 {
             font-size: 4rem;
             font-weight: bold;
+
+        @media @mobile {
+            font-size: 3.2rem;
+        }
         }
     }
 
     .nav-links {
         width: 38%;
         .flexbox(space-between, center);
+
+        @media @mobile {
+            width: 90%;
+            margin-top: 10px;
+        }
     }
 
     a {
