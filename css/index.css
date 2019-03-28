@@ -188,7 +188,7 @@ header nav h1 {
   font-weight: bold;
 }
 header .nav-links {
-  width: 45%;
+  width: 38%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -269,4 +269,29 @@ header a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  color: white;
+  background: teal;
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .content-pick .destination .btn:hover {
+  color: teal;
+  background: white;
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C0C0C0;
 }

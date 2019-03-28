@@ -9,3 +9,14 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.custom-btn(@color, @bgColor, @bRadius, @height, @width, @fontSize, @fontWeight){
+    color: @color;
+    background: @bgColor;
+    border-radius: @bRadius;
+    height: @height;
+    width: @width;
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    .flexbox(@justify: center, @align: center)
+}
