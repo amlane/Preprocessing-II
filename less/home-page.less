@@ -3,32 +3,47 @@
   .top-content {
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 10px;
+    
+    @media @mobile {
+        .gutter();
+      }
 
     img {
       margin-bottom: 20px;
     }
-  }
-
-  h2 {
+   h2 {
       font-weight: bold;
     }
-
+  }
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+    .gutter();
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      order: -3;
+      
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        height: auto;
+      }
 
       img {
         border-radius: 10px;
