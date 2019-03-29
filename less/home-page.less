@@ -67,8 +67,9 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 80%;
     margin: 0 auto 30px;
+    
 
     @media @mobile {
         .gutter();
@@ -89,6 +90,8 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    
 
     @media @mobile {
       flex-direction: column;
@@ -98,7 +101,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      .gutter(80%, 10%, 10%);
+      
+      @media @mobile {
+        .gutter();
+      }
+
 
       h4 {
         font-weight: bold;
