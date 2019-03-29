@@ -3,6 +3,10 @@
   .top-content {
     border-bottom: 2px dashed @navigation-border;
     padding-bottom: 10px;
+
+    @media @tablet {
+      .gutter();
+    }
     
     @media @mobile {
         .gutter();
@@ -22,6 +26,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @tablet {
+      .gutter();
+    }
+
     @media @mobile {
     .gutter();
     }
@@ -29,16 +37,27 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      order: -3;
-      
+
+       @media @tablet {
+        width: 100%;
+        order: -3
+      }
+           
       @media @mobile {
         width: 100%;
+        order: -3;
       }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @tablet {
+        width: 100%;
+        height: auto;
+        .flexbox()
+      }
 
       @media @mobile {
         width: 100%;
@@ -68,8 +87,7 @@
 
   .content-destination {
     width: 80%;
-    margin: 0 auto 30px;
-    
+    margin: 0 auto 30px;    
 
     @media @mobile {
         .gutter();
@@ -90,9 +108,12 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    
-    
 
+    @media @tablet {
+      .gutter();
+      flex-direction: column;
+    } 
+    
     @media @mobile {
       flex-direction: column;
       .gutter();
@@ -101,6 +122,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @tablet {
+        width: 100%;
+      }
       
       @media @mobile {
         .gutter();
@@ -114,8 +139,13 @@
       .btn {
         .custom-btn();
 
+        @media @tablet {
+          .custom-btn(white, @eastern-blue, 10px, 45px, 80%, 1.8rem, bold);
+          margin: 0 auto;
+        }
+
         @media @mobile {
-          .custom-btn(@color: white, @eastern-blue, 10px, 45px, 100%, 1.8rem, bold);
+          .custom-btn(white, @eastern-blue, 10px, 45px, 100%, 1.8rem, bold);
         }
 
         &:hover {
@@ -129,6 +159,12 @@
           50% {transform: scale(1.2);}
           100% {transform: scale(1);}
         }
+
+          @media @tablet {
+            &:hover {
+              .custom-btn(@eastern-blue, white, 10px, 45px, 80%, 1.8rem, bold)
+            }
+          }
 
           @media @mobile {
              &:hover {

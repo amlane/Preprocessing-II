@@ -207,6 +207,11 @@ header .nav-links {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  header .nav-links {
+    width: 60%;
+  }
+}
 @media (max-width: 500px) {
   header .nav-links {
     width: 90%;
@@ -238,6 +243,13 @@ header a:hover {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 10px;
 }
+@media (max-width: 800px) {
+  .home .top-content {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 @media (max-width: 500px) {
   .home .top-content {
     width: 90%;
@@ -257,6 +269,13 @@ header a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .home .content-section {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 @media (max-width: 500px) {
   .home .content-section {
     width: 90%;
@@ -267,16 +286,31 @@ header a:hover {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
-  order: -3;
+}
+@media (max-width: 800px) {
+  .home .content-section .text-content {
+    width: 100%;
+    order: -3;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
+    order: -3;
   }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 800px) {
+  .home .content-section .img-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
@@ -325,6 +359,14 @@ header a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .home .content-pick {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
@@ -336,6 +378,11 @@ header a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -358,6 +405,21 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination .btn {
+    color: white;
+    background: #17A2B8;
+    border-radius: 10px;
+    height: 45px;
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -399,6 +461,20 @@ header a:hover {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination .btn:hover:hover {
+    color: #17A2B8;
+    background: white;
+    border-radius: 10px;
+    height: 45px;
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 500px) {
