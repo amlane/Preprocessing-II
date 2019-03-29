@@ -385,6 +385,21 @@ header a:hover {
   justify-content: center;
   align-items: center;
   border: 1px solid #C0C0C0;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn:hover:hover {
