@@ -412,7 +412,7 @@ header a:hover {
     background: #17A2B8;
     border-radius: 10px;
     height: 45px;
-    width: 80%;
+    width: 50%;
     font-size: 1.8rem;
     font-weight: bold;
     display: flex;
@@ -469,7 +469,7 @@ header a:hover {
     background: white;
     border-radius: 10px;
     height: 45px;
-    width: 80%;
+    width: 50%;
     font-size: 1.8rem;
     font-weight: bold;
     display: flex;
