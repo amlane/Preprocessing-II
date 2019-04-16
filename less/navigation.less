@@ -1,1 +1,58 @@
 // Navigation Styles here
+
+// .flexbox(@justify: center, @align: center)
+
+header {
+    border-bottom: 2px dashed @navigation-border;
+    height: 105px;
+    .flexbox(center, center);
+
+    nav {
+        .flexbox(space-between, center);
+        max-width: 800px;
+        width: 90%;
+        padding-right: 2%;
+
+        @media @mobile {
+            .flexbox(center, center);
+            flex-direction: column;
+            height: 90px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+
+        @media @mobile {
+            font-size: 3.2rem;
+        }
+        }
+    }
+
+    .nav-links {
+        width: 38%;
+        .flexbox(space-between, center);
+        
+        @media @tablet {
+            width: 60%;
+        }
+
+        @media @mobile {
+            width: 90%;
+            margin-top: 20px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        font-weight: bold;
+        align-self: center;
+
+        &:hover {
+        color: lightblue;
+    }
+    }
+
+}

@@ -1,1 +1,35 @@
 // Mixins in here
+
+.test(){
+    border: 1px solid red;
+}
+
+.flexbox(@justify: center, @align: center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-btn(@color: white, @bgColor: teal, @bRadius: 10px, @height: 45px, @width: 200px, @fontSize: 1.8rem, @fontWeight: bold){
+    color: @color;
+    background: @bgColor;
+    border-radius: @bRadius;
+    height: @height;
+    width: @width;
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    .flexbox(@justify: center, @align: center)
+}
+
+.gutter(@width: 90%, @marR: 5%, @marL: 5%){
+    width: @width;
+    margin-right: @marR;
+    margin-left: @marL;
+}
+
+.pulse(@aniName: pulse, @aniTime: 1s, @aniRepeat: infinite, @ease: ease-in-out){
+    animation-name: @aniName;
+    animation-duration: @aniTime;
+    animation-iteration-count: @aniRepeat;
+    animation-timing-function: @ease;
+}
